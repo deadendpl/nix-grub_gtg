@@ -1,6 +1,7 @@
 # THIS IS A FORK FROM <https://gitlab.com/imnotpua/grub_gtg>
 
-I customized it to try to make it work on NixOS
+I modified it to make it work on NixOS.
+If you're on normal distro then look at the original repo.
 
 ## NIX INSTALLATION
 In `configuration.nix` set the grub theme like this:
