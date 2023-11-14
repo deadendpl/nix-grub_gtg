@@ -2,6 +2,20 @@
 
 I customized it to try to make it work on NixOS
 
+## NIX INSTALLATION
+In `configuration.nix` set the grub theme like this:
+
+``` nix
+boot.loader.grub.theme = pkgs.fetchFromGitHub { # current as of 11/2023
+                         owner = "deadendpl";
+                         repo = "grub_gtg";
+                         rev = "60cabe92eaf3c9404c7d38634fc9018d6e54de82";
+                         sha256 = "0h5v1pjx2j5ll4fyz2jxchza32s3624g2klp3ff94kfb6qx6dzfw";
+};
+```
+
+Then reload your nixos config with `sudo nixos-rebuild switch`.
+
 # Custom Grub Theme
 
 This grub theme was initially designed when I was playing around with grub back in Highschool. Just decided to improvise it and release it to the public.
