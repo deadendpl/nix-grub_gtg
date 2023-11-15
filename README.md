@@ -9,9 +9,9 @@ In `configuration.nix` set the grub theme like this:
 ``` nix
 boot.loader.grub.theme = pkgs.fetchFromGitHub { # current as of 11/2023
                          owner = "deadendpl";
-                         repo = "grub_gtg";
-                         rev = "60cabe92eaf3c9404c7d38634fc9018d6e54de82";
-                         sha256 = "0h5v1pjx2j5ll4fyz2jxchza32s3624g2klp3ff94kfb6qx6dzfw";
+                         repo = "nix-grub_gtg";
+                         rev = "f0a6eec0993b731562fd44acfe7851aed82179ec";
+                         sha256 = "1fg3vdqxj7qqpbhl96xhl3175a68bg0c7xbn7q2hspc2272hmh6b";
 };
 ```
 
